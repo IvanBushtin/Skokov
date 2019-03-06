@@ -1,0 +1,86 @@
+.container {
+  max-width: 1230px; }
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative; }
+
+.logo {
+  color: #fe504f;
+  font: 700 32px "Verdana", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px; }
+  .logo:hover {
+    color: #fe504f;
+    text-decoration: none; }
+
+.hamburger {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-color: #fe504f;
+  cursor: pointer;
+  box-sizing: border-box; }
+  .hamburger .hamburger-item {
+    position: absolute;
+    top: 24px;
+    left: 12px;
+    width: 27px;
+    height: 2px;
+    background-color: #fff; }
+    .hamburger .hamburger-item:first-child {
+      top: 17px; }
+    .hamburger .hamburger-item:last-child {
+      top: 31px; }
+
+.rotate {
+  background-color: #fe504f; }
+  .rotate .hamburger-top {
+    transform: translateY(6px) translateX(-13px) rotate(135deg);
+    transition: .35s ease;
+    left: 49%;
+    background-color: #fff; }
+  .rotate .hamburger-middle {
+    opacity: 0; }
+  .rotate .hamburger-bottom {
+    transform: translateY(-8px) translateX(0) rotate(-135deg);
+    transition: .35s ease;
+    background-color: #fff; }
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  color: #fff;
+  font: 400 14px "Verdana", sans-serif;
+  text-transform: uppercase; }
+  @media (max-width: 767px) {
+    .nav-list {
+      flex-direction: column;
+      align-items: flex-end;
+      top: 50px;
+      right: 0;
+      padding-right: 15px; } }
+  .nav-list .nav-list-item {
+    cursor: pointer;
+    padding: 8px 0;
+    margin-right: 47px; }
+    @media (max-width: 767px) {
+      .nav-list .nav-list-item {
+        margin-right: 0; } }
+    .nav-list .nav-list-item a {
+      text-align: right; }
+    .nav-list .nav-list-item:last-child {
+      margin-right: 0; }
+    .nav-list .nav-list-item:hover {
+      border-bottom: 3px solid #fe504f; }
+
+.top-section {
+  min-height: 100vh;
+  padding-top: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/top-section-bg.png") center/cover no-repeat; }
