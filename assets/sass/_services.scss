@@ -1,19 +1,40 @@
 @import "variables";
 
 .services {
+  padding-bottom: 20px;
   text-align: center;
   color: $paragraph-text-color;
-  font:  400 16px $primary-font;
-  .services-header {
-    max-width: 220px;
-    margin: 0 auto;
-    font-size: 24px;
+  font: 400 16px $primary-font;
+}
+
+.services-list {
+  align-items: flex-start;
+
+  .services-list-item {
+    margin-bottom: 60px;
+  }
+
+  .services-list-header {
+    max-width: 200px;
+    margin: 17px auto;
     color: $heading-text-color;
     font-weight: 700;
-    text-transform: uppercase;
+    font-size: 16px;
+    text-transform: capitalize;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 61px;
+      height: 3px;
+      margin: 7px auto 0;
+      background-color: $first-text-color;
+    }
   }
-  .services-paragraph {
-    max-width: 911px;
-    margin: 30px auto 70px;
+
+  .services-list-paragraph {
+    max-width: 230px;
+    margin: 0 auto;
+    font-size: 14px;
   }
 }

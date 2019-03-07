@@ -1,0 +1,55 @@
+@import "variables";
+
+.about-us {
+  padding: 80px 0;
+}
+
+.about-us-list-header {
+  color: $first-text-color;
+  font: 700 20px $primary-font;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin-top: 15px;
+    background-color: $first-text-color;
+  }
+}
+
+.about-us-list-paragraph {
+  max-width: 580px;
+  color: $heading-text-color;
+  font: 400 14px $primary-font;
+  line-height: 24px;
+}
+
+.clients-list {
+  .clients-list-item {
+    margin-right: -25px;
+    margin-bottom: 5px;
+
+    img {
+      max-width: 185px;
+      width: 100%;
+    }
+  }
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  @media (max-width: 430px) {
+    flex-wrap: nowrap;
+  }
+
+  .team-list-item {
+
+    img {
+      max-width: 200px;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "variables";
+
+.contact-us {
+  padding: 100px 0;
+  text-align: center;
+  background: url("../img/contact-us-bg.png") center/cover no-repeat;
+
+  .contact-us-header {
+    max-width: 1130px;
+    margin: 0 auto 40px;
+    color: $second-text-color;
+    font: 700 34px $primary-font;
+    line-height: 58px;
+    text-transform: uppercase;
+  }
+}
