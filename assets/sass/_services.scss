@@ -1,0 +1,19 @@
+@import "variables";
+
+.services {
+  text-align: center;
+  color: $paragraph-text-color;
+  font:  400 16px $primary-font;
+  .services-header {
+    max-width: 220px;
+    margin: 0 auto;
+    font-size: 24px;
+    color: $heading-text-color;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .services-paragraph {
+    max-width: 911px;
+    margin: 30px auto 70px;
+  }
+}
