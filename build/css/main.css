@@ -229,3 +229,70 @@ nav {
   .team-list .team-list-item img {
     max-width: 200px;
     width: 100%; }
+
+.what-we-do {
+  padding: 90px 0;
+  background: url("../img/what-we-do-bg.png") center/cover no-repeat; }
+  .what-we-do .what-we-do-header {
+    max-width: 850px;
+    margin: 30px auto;
+    text-align: center;
+    color: #fff;
+    font: 700 34px/58px "Verdana", sans-serif;
+    text-transform: uppercase; }
+  .what-we-do .what-we-do-paragraph {
+    max-width: 1020px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font: 400 16px/24px "Verdana", sans-serif; }
+
+.what-we-do-link {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #fe504f; }
+
+.news {
+  padding: 80px 0; }
+
+/*.news-image {
+  max-width: 300px;
+  width: 100%;
+}
+
+.news-image-large {
+  max-width: 600px;
+  width: 100%;
+}
+*/
+.news-wrapper {
+  position: relative;
+  padding-top: 30px;
+  padding-left: 15px;
+  background-color: #343434; }
+  .news-wrapper .news-wrapper-header {
+    max-width: 240px;
+    color: #fe504f;
+    font: 700 20px "Verdana", sans-serif;
+    text-transform: uppercase; }
+    .news-wrapper .news-wrapper-header::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 3px;
+      margin-top: 15px;
+      background-color: #fe504f; }
+  .news-wrapper .news-wrapper-paragraph {
+    color: #fff;
+    font: 400 12px/20px "Verdana", sans-serif; }
+  .news-wrapper .news-wrapper-date {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    color: #fe504f;
+    font: italic 12px "Verdana", sans-serif; }

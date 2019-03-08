@@ -1,0 +1,48 @@
+@import "variables";
+
+.news {
+  padding: 80px 0;
+}
+
+/*.news-image {
+  max-width: 300px;
+  width: 100%;
+}
+
+.news-image-large {
+  max-width: 600px;
+  width: 100%;
+}
+*/
+.news-wrapper {
+  position: relative;
+  padding-top: 30px;
+  padding-left: 15px;
+  background-color: $heading-text-color;
+
+  .news-wrapper-header {
+    max-width: 240px;
+    color: $first-text-color;
+    font: 700 20px $primary-font;
+    text-transform: uppercase;
+    &::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 3px;
+      margin-top: 15px;
+      background-color: $first-text-color;
+    }
+  }
+  .news-wrapper-paragraph {
+    color: $second-text-color;
+    font: 400 12px/20px $primary-font;
+  }
+  .news-wrapper-date {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    color: $first-text-color;
+    font: italic 12px $primary-font;
+  }
+}
